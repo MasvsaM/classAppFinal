@@ -1,0 +1,38 @@
+.curso-item {
+    --padding-top: 20px;
+
+    ion-avatar {
+        width: 75px;
+        height: 80px;
+        --border-radius: 10px;
+    }
+
+    .name {
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+
+    .data {
+        font-size: 13px;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    .option-btn {
+        font-size: 27px;
+    }
+
+    ion-chip {
+        font-size: 14px;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+}
+
+ion-list-header{
+    font-size: 25px;
+    margin-top: 5px;
+    font-weight: bold;
+}

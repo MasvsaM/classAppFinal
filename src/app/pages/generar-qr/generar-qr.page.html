@@ -1,0 +1,28 @@
+<app-header [showMenu]="true" title="Inicio"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let c of cursos">
+      <ion-item>
+        <ion-label>
+          <div class="name">{{c.name}}</div>
+          <div class="data">
+            <strong>Sección:</strong> {{c.seccion}}
+          </div>
+        </ion-label>
+        <ion-button (click)="generarCodigoQR(c.name, c.seccion)">Generar QR</ion-button>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+
+  <div *ngIf="codigoQR">
+    <qrcode [qrdata]="codigoQR"></qrcode>
+    <div>
+      <h3>Alumnos presentes:</h3>
+      <ul>
+        <li *ngFor="let a of alumnosPresentes"></li>
+      </ul>
+    </div>
+  </div>
+</ion-content>
+
