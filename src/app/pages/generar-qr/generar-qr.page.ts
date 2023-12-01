@@ -2,6 +2,9 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Curso, User } from 'src/app/models/models';
 import { FirebaseauthService } from 'src/app/services/firebaseauth.service';
 import { UtilsService } from 'src/app/services/utils.service';
+import { AlertController } from '@ionic/angular'; // Importar AlertController
+import { ModalController } from '@ionic/angular';
+import { IngresarNombreComponent } from '../ingresar-nombre/ingresar-nombre.component';
 
 @Component({
   selector: 'app-generar-qr',

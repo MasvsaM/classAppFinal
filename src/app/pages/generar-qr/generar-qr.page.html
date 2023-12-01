@@ -17,10 +17,10 @@
 
   <div *ngIf="codigoQR">
     <qrcode [qrdata]="codigoQR"></qrcode>
-    <div>
+    <div *ngIf="alumnosPresentes.length > 0">
       <h3>Alumnos presentes:</h3>
       <ul>
-        <li *ngFor="let a of alumnosPresentes"></li>
+        <li *ngFor="let alumno of alumnosPresentes">{{ alumno['nombre'] }}</li>
       </ul>
     </div>
   </div>
