@@ -19,7 +19,7 @@ export class GenerarQRPage implements OnInit {
   alumnosPresentes: User[] = [];
 
   generarCodigoQR(nombreCurso: string, seccionCurso: string) {
-    this.codigoQR = `Curso: ${nombreCurso}, Sección: ${seccionCurso}`;
+    this.codigoQR = `Curso: ${nombreCurso}, Sección: ${seccionCurso}, Fecha: date`;
   }
 
 
