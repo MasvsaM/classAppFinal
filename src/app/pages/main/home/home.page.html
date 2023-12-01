@@ -29,6 +29,9 @@
           <ion-button [routerLink]="['/generar-qr']" *ngIf="rol === 'profesor'" size="small" mode="ios" fill="outline">
             Asistencia
           </ion-button>
+          <ion-button [routerLink]="['/scanner']" *ngIf="rol === 'alumno'" size="small" mode="ios" fill="outline">
+            Asistencia
+          </ion-button>
         </ion-list>
 
       </ion-item>

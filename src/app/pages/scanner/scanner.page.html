@@ -1,0 +1,23 @@
+<app-header [showMenu]="true" title="Inicio"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let c of cursos">
+      <ion-item>
+        <ion-label>
+          <div class="name">{{c.name}}</div>
+          <div class="data">
+            <strong>Sección:</strong> {{c.seccion}}
+          </div>
+        </ion-label>
+        <!--  ======== Tomar/Seleccionar una imagen =========  -->
+        <ion-button (click)="takeImage()" mode="ios" size="small" shape="round">
+          Tomar/Seleccionar
+        </ion-button>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+
+
+</ion-content>
+

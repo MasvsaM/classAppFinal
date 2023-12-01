@@ -1,4 +1,5 @@
 export interface Curso {
+    qrCode: string;
     name: string;
     seccion: string;
     image: string;
